@@ -83,6 +83,7 @@ def on_window_close(self, e):
 # Subscribing to events
 i3.on('workspace::focus', on_workspace_focus)
 i3.on('window::close', on_window_close)
+i3.on('window::move', on_window_close)
 
 # Start the main loop and wait for events to come in.
 i3.main()
